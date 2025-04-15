@@ -1,46 +1,10 @@
 <p class="text-center">{{count()}}</p>
 <div class="d-flex justify-content-center">
   <button (click)="increment()" class="btn btn-primary">Increment</button>
-  <button (click)="reset()" class="btn btn-primary">Reset</button>
 </div>
 
 
 
-<div style="column-count:2;column-gap:20px ;">
-  <div style="border-style: solid;">
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-      <div style="background: red;">1</div>
-      <div style="background: blue;">2</div>
-      <div style="background: green;">3</div>
-      <div style="background: orange;">4</div>
-      <div style="background: purple;">5</div>
-      <div style="background: pink;">6</div>
-    </div>
-  </div>
-  <div style="border-style: solid;">
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-      <div style="background: red;">1</div>
-      <div style="background: blue;">2</div>
-      <div style="background: green;">3</div>
-      <div style="background: orange;">4</div>
-      <div style="background: purple;">5</div>
-      <div style="background: pink;">6</div>
-    </div>
-  </div>
-</div>
+<p [ngStyle]="{color:isActive ? 'green' :'red '}" class="text-center">Status</p>
 
-
-
-
-<div style="column-count: 5; column-gap: 20px;">
-  <p>Lorem ipsum dolor sit amet...</p>
-  <div style=""></div>
-  <p>Another paragraph of text...</p>
-  <p>Another paragraph of text...</p>
-  <p>Another paragraph of text...</p>
-  <p>Another paragraph of text...</p>
-
-</div>
-
-<p>Luqman new Commit</p>
-<p>Luqman new one Commit</p>
+<button class="btn btn-primary">Click me</button>

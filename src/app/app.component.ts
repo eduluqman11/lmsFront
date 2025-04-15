@@ -27,7 +27,7 @@ export interface PeriodicElement {
 })
 export class AppComponent {
   count = signal<number>(0)
-
+  isActive:boolean = false
   constructor() {
     effect(() => {
       console.log('Count changed:', this.count());
@@ -36,7 +36,9 @@ export class AppComponent {
   
    increment(){
     this.count.update(c => c + 1)
+    this.isActive = !this.isActive
   }
+
 
   reset(){
     this.count.set(0)
